@@ -1,0 +1,151 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="Jurnal" language="java" columnCount="1" pageWidth="595" pageHeight="842" orientation="Landscape" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="52ac0fcd-4c07-4863-aa1f-9fa36c85792f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="disetujui" class="java.lang.String"/>
+	<parameter name="saldoAset" class="java.lang.String"/>
+	<parameter name="saldoKewajiban" class="java.lang.String"/>
+	<parameter name="saldoEkuitas" class="java.lang.String"/>
+	<parameter name="saldoKewajibanEkuitas" class="java.lang.String"/>
+	<parameter name="tanggal" class="java.lang.String"/>
+	<query language="sql"><![CDATA[]]></query>
+	<field name="tipeAkun" class="java.lang.String"/>
+	<field name="namaAkun" class="java.lang.String"/>
+	<field name="jumlah" class="java.lang.String"/>
+	<title height="180" splitType="Stretch">
+		<element kind="staticText" uuid="4cc12294-cd01-44a9-b124-69fc43348caf" x="351" y="140" width="46" height="30" fontName="Times New Roman" vTextAlign="Middle">
+			<text><![CDATA[Tanggal:]]></text>
+		</element>
+		<element kind="textField" uuid="7e87068a-7ee0-4dcb-aac6-9f02debe3f53" x="397" y="140" width="158" height="30" fontName="Times New Roman" pattern="dd MMM yyyy" hTextAlign="Left" vTextAlign="Middle">
+			<expression><![CDATA[$P{tanggal}]]></expression>
+		</element>
+		<element kind="staticText" uuid="b7f3915c-ef89-4167-9581-76df757c3e1a" x="169" y="100" width="217" height="30" fontName="Times New Roman" fontSize="18.0" bold="true" underline="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Neraca]]></text>
+		</element>
+		<element kind="staticText" uuid="2a341507-cfb9-4af7-8eaf-a9560f6ab156" x="6" y="10" width="542" height="90" fontName="Times New Roman" fontSize="33.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[PT. Sarana Pembangunan Riau
+TRADA]]></text>
+		</element>
+	</title>
+	<columnHeader height="30" splitType="Stretch">
+		<element kind="staticText" uuid="69039b06-3e60-4d3a-b656-0e68d04160b8" x="0" y="0" width="185" height="30" fontName="Times New Roman" fontSize="12.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Kategori]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4077bcd7-9ab5-4a99-a0c5-cacf96b475e3"/>
+			<box>
+				<pen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="4e2dc8a7-9a86-4254-837e-b14516d698ec" x="185" y="0" width="185" height="30" fontName="Times New Roman" fontSize="12.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Nama Akun]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5d2b0c25-7ff9-4a2a-9876-b4190997cb80"/>
+			<box>
+				<pen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="14b15b97-a358-4bad-9dc1-d47c0519c7b5" x="370" y="0" width="185" height="30" fontName="Times New Roman" fontSize="12.0" bold="true" hTextAlign="Right" vTextAlign="Middle">
+			<text><![CDATA[Saldo]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="02b28678-5c69-44f6-8687-e03489d3b2d1"/>
+			<box>
+				<pen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<element kind="textField" uuid="9789c2db-4f18-4631-87ac-df987962a04f" x="185" y="0" width="185" height="30" fontName="Times New Roman" hTextAlign="Left" vTextAlign="Middle">
+				<expression><![CDATA[$F{namaAkun}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5d2b0c25-7ff9-4a2a-9876-b4190997cb80"/>
+			</element>
+			<element kind="textField" uuid="9783dc12-6c45-425c-98a1-2eb3409fd523" x="370" y="0" width="185" height="30" fontName="Times New Roman" hTextAlign="Right" vTextAlign="Middle">
+				<expression><![CDATA[$F{jumlah}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="02b28678-5c69-44f6-8687-e03489d3b2d1"/>
+			</element>
+			<element kind="textField" uuid="ce960c80-8e71-43eb-8e99-b06d8674f02e" x="0" y="0" width="185" height="30" fontName="Times New Roman" hTextAlign="Left" vTextAlign="Middle">
+				<expression><![CDATA[$F{tipeAkun}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4077bcd7-9ab5-4a99-a0c5-cacf96b475e3"/>
+			</element>
+			<element kind="line" uuid="a4e28a76-fc98-436c-b1aa-fbf92f8c2842" x="0" y="30" width="555" height="1">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineStyle="Dashed"/>
+			</element>
+		</band>
+	</detail>
+	<summary height="200">
+		<element kind="staticText" uuid="c41827fe-8cbc-4d37-a799-d99574d26f83" x="0" y="0" width="80" height="30" fontName="Times New Roman" fontSize="12.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<paragraph rightIndent="10"/>
+			<text><![CDATA[Total Aset:]]></text>
+			<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+			<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+		</element>
+		<element kind="rectangle" uuid="9ae6b8ff-3b05-4d62-b713-27a5263a62c0" mode="Opaque" x="0" y="130" width="110" height="70">
+			<pen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+		</element>
+		<element kind="line" uuid="bbbbf497-fdab-43b4-9dc7-2d2cc98559a0" x="0" y="150" width="110" height="1">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="staticText" uuid="25326e63-f707-4485-83d7-b381b2f65b16" x="0" y="130" width="110" height="20" fontName="Times New Roman" fontSize="12.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Disetujui Oleh]]></text>
+		</element>
+		<element kind="textField" uuid="acfeafd0-6b90-401e-9a95-972a5489fff2" x="0" y="180" width="110" height="20" fontName="Times New Roman" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$P{disetujui}]]></expression>
+		</element>
+		<element kind="staticText" uuid="9e8dd1b6-c3b2-4e54-a59c-a7a4b6005b4a" x="280" y="1" width="140" height="30" fontName="Times New Roman" fontSize="12.0" bold="true" hTextAlign="Right" vTextAlign="Middle">
+			<paragraph rightIndent="10"/>
+			<text><![CDATA[Total Kewajiban:]]></text>
+			<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+			<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+		</element>
+		<element kind="textField" uuid="4b3a187b-d6a9-436a-bfa1-46ba70361a00" x="80" y="1" width="200" height="28" fontName="Times New Roman" hTextAlign="Left" vTextAlign="Middle">
+			<expression><![CDATA[$P{saldoAset}]]></expression>
+		</element>
+		<element kind="textField" uuid="296df59c-047e-4a22-a9f2-bdc586386cd2" x="420" y="0" width="134" height="30" fontName="Times New Roman" hTextAlign="Right" vTextAlign="Middle">
+			<expression><![CDATA[$P{saldoKewajiban}]]></expression>
+			<box>
+				<pen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="3d3d6c04-e458-4ba5-9f09-aed7f9b29e65" x="280" y="31" width="140" height="30" fontName="Times New Roman" fontSize="12.0" bold="true" hTextAlign="Right" vTextAlign="Middle">
+			<paragraph rightIndent="10"/>
+			<text><![CDATA[Total Ekuitas:]]></text>
+			<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+			<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+		</element>
+		<element kind="textField" uuid="592f34c1-f7c8-4c88-a57a-4cac745a7216" x="420" y="29" width="134" height="30" fontName="Times New Roman" hTextAlign="Right" vTextAlign="Middle">
+			<expression><![CDATA[$P{saldoEkuitas}]]></expression>
+		</element>
+		<element kind="staticText" uuid="2b518ec2-7db3-48ea-a5c0-650f6412c588" x="230" y="61" width="190" height="30" fontName="Times New Roman" fontSize="12.0" bold="true" hTextAlign="Right" vTextAlign="Middle">
+			<paragraph rightIndent="10"/>
+			<text><![CDATA[Total Kewajiban + Ekuitas:]]></text>
+			<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+			<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+		</element>
+		<element kind="textField" uuid="1583fea2-1705-4a63-b6ce-709461a54361" x="420" y="61" width="134" height="30" fontName="Times New Roman" hTextAlign="Right" vTextAlign="Middle">
+			<expression><![CDATA[$P{saldoKewajibanEkuitas}]]></expression>
+		</element>
+		<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+	</summary>
+</jasperReport>

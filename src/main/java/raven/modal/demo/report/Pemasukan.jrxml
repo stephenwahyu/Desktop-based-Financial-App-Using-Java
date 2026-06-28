@@ -1,0 +1,149 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="Jurnal" language="java" columnCount="1" pageWidth="595" pageHeight="842" orientation="Landscape" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="52ac0fcd-4c07-4863-aa1f-9fa36c85792f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="total" class="java.lang.Integer"/>
+	<parameter name="disetujui" class="java.lang.String"/>
+	<parameter name="diterima" class="java.lang.String"/>
+	<query language="sql"><![CDATA[]]></query>
+	<field name="namaAkun" class="java.lang.String"/>
+	<field name="tanggal" class="java.lang.String"/>
+	<field name="deskripsi" class="java.lang.String"/>
+	<field name="jumlah" class="java.lang.Integer"/>
+	<title height="139" splitType="Stretch">
+		<element kind="staticText" uuid="ea21b497-a524-4286-b27d-160506b5a3d3" x="169" y="100" width="217" height="30" fontName="Times New Roman" fontSize="18.0" bold="true" underline="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Transaksi Pemasukan]]></text>
+		</element>
+		<element kind="staticText" uuid="a689abff-0deb-4d9e-b741-607370ad2db0" x="6" y="10" width="542" height="90" fontName="Times New Roman" fontSize="33.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[PT. Sarana Pembangunan Riau
+TRADA]]></text>
+		</element>
+	</title>
+	<columnHeader height="30" splitType="Stretch">
+		<element kind="staticText" uuid="2412356d-d5a9-4836-867c-ed7df9fee037" x="0" y="0" width="120" height="30" fontName="Times New Roman" fontSize="12.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<paragraph spacingBefore="0" spacingAfter="0"/>
+			<text><![CDATA[Nama Akun]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dfc27783-4376-43fb-a576-13c22ae56c07"/>
+			<property name="com.jaspersoft.studio.unit.spacingBefore" value="px"/>
+			<property name="com.jaspersoft.studio.unit.spacingAfter" value="px"/>
+			<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+				<pen lineStyle="Dotted"/>
+				<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="a700165f-39e2-4336-a8f5-b11bbfcbd622" x="120" y="0" width="108" height="30" fontName="Times New Roman" fontSize="12.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<paragraph spacingBefore="0" spacingAfter="0"/>
+			<text><![CDATA[Tanggal Transaksi]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a4b8b0da-3b48-4493-a537-c18ccab41239"/>
+			<property name="com.jaspersoft.studio.unit.spacingBefore" value="px"/>
+			<property name="com.jaspersoft.studio.unit.spacingAfter" value="px"/>
+			<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+				<pen lineStyle="Dotted"/>
+				<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="132eab7e-ead9-4929-90e4-86e7fb00accf" x="229" y="0" width="210" height="30" fontName="Times New Roman" fontSize="12.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<paragraph spacingBefore="0" spacingAfter="0"/>
+			<text><![CDATA[Deskripsi]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2ff7b748-254f-4ffc-bac9-0608ad4aacb4"/>
+			<property name="com.jaspersoft.studio.unit.spacingBefore" value="px"/>
+			<property name="com.jaspersoft.studio.unit.spacingAfter" value="px"/>
+			<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+				<pen lineStyle="Dotted"/>
+				<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="b1e2c9d1-6022-47d8-b1e7-5748f2cc0ead" x="439" y="0" width="116" height="30" fontName="Times New Roman" fontSize="12.0" bold="true" hTextAlign="Right" vTextAlign="Middle">
+			<paragraph spacingBefore="0" spacingAfter="0"/>
+			<text><![CDATA[Jumlah]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8ac02144-e664-408f-a0d8-56fe0a429057"/>
+			<property name="com.jaspersoft.studio.unit.spacingBefore" value="px"/>
+			<property name="com.jaspersoft.studio.unit.spacingAfter" value="px"/>
+			<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+				<pen lineStyle="Dotted"/>
+				<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<element kind="textField" uuid="06a22b0d-ced1-4259-b44d-65bd86d1d1a3" x="0" y="0" width="120" height="30" fontName="Times New Roman" hTextAlign="Left" vTextAlign="Middle">
+				<expression><![CDATA[$F{namaAkun}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dfc27783-4376-43fb-a576-13c22ae56c07"/>
+			</element>
+			<element kind="textField" uuid="7209de70-8157-4ba5-9286-38949db12b11" x="120" y="0" width="108" height="30" fontName="Times New Roman" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{tanggal}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a4b8b0da-3b48-4493-a537-c18ccab41239"/>
+			</element>
+			<element kind="textField" uuid="87e96ab2-5a62-4730-a545-b8fb2989a11c" x="229" y="0" width="210" height="30" fontName="Times New Roman" vTextAlign="Middle">
+				<expression><![CDATA[$F{deskripsi}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2ff7b748-254f-4ffc-bac9-0608ad4aacb4"/>
+			</element>
+			<element kind="textField" uuid="db1aa33c-3bc3-4063-894c-92acb0686812" x="439" y="0" width="116" height="30" fontName="Times New Roman" pattern=" Rp#,##0.##" hTextAlign="Right" vTextAlign="Middle">
+				<expression><![CDATA[$F{jumlah}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8ac02144-e664-408f-a0d8-56fe0a429057"/>
+			</element>
+			<element kind="line" uuid="a4e28a76-fc98-436c-b1aa-fbf92f8c2842" x="0" y="32" width="555" height="1">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineStyle="Dashed"/>
+			</element>
+		</band>
+	</detail>
+	<pageFooter height="50"/>
+	<summary height="100">
+		<element kind="textField" uuid="c0d02347-86ef-4346-883b-d851376d93bd" x="440" y="1" width="116" height="30" fontName="Times New Roman" fontSize="10.0" pattern=" Rp#,##0.##" hTextAlign="Right" vTextAlign="Middle">
+			<expression><![CDATA[$P{total}]]></expression>
+		</element>
+		<element kind="staticText" uuid="c41827fe-8cbc-4d37-a799-d99574d26f83" x="0" y="1" width="440" height="30" fontName="Times New Roman" fontSize="12.0" bold="true" hTextAlign="Right" vTextAlign="Middle">
+			<paragraph rightIndent="15"/>
+			<text><![CDATA[Total jumlah :]]></text>
+			<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+			<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+		</element>
+		<element kind="rectangle" uuid="9ae6b8ff-3b05-4d62-b713-27a5263a62c0" mode="Opaque" x="0" y="30" width="110" height="70">
+			<pen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+		</element>
+		<element kind="line" uuid="bbbbf497-fdab-43b4-9dc7-2d2cc98559a0" x="0" y="50" width="110" height="1">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="rectangle" uuid="5593f481-bb3d-46a2-b8a2-cb5573b09afc" mode="Opaque" x="120" y="30" width="110" height="70" radius="0">
+			<pen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+		</element>
+		<element kind="line" uuid="dfd27514-94ca-4a44-89c8-eda2e63c6830" x="120" y="50" width="110" height="1">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="staticText" uuid="25326e63-f707-4485-83d7-b381b2f65b16" x="0" y="30" width="110" height="20" fontName="Times New Roman" fontSize="12.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Disetujui Oleh]]></text>
+		</element>
+		<element kind="staticText" uuid="c069726a-cbf3-4eed-be75-d8bf5b787025" x="120" y="30" width="110" height="20" fontName="Times New Roman" fontSize="12.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Diterima Oleh]]></text>
+		</element>
+		<element kind="textField" uuid="acfeafd0-6b90-401e-9a95-972a5489fff2" x="0" y="80" width="110" height="20" fontName="Times New Roman" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$P{disetujui}]]></expression>
+		</element>
+		<element kind="textField" uuid="dd59c84d-b9eb-4ec8-97fc-9cbc392ffac2" x="120" y="80" width="110" height="20" fontName="Times New Roman" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$P{diterima}]]></expression>
+		</element>
+		<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+	</summary>
+</jasperReport>
